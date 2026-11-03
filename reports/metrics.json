@@ -1,0 +1,68 @@
+{
+  "raw_table_audit": {
+    "rows": 5412,
+    "summary_rows_avg": 1380,
+    "summary_rows_std": 1380,
+    "measurement_rows": 2652,
+    "co2r_measurements": 2210,
+    "fe_total_above_100_5": 21,
+    "fe_liquid_negative": 25,
+    "fe_h2_above_100": 3,
+    "mean_co2r_voltage_naive": 2.542,
+    "mean_co2r_voltage_measurements": 3.405
+  },
+  "real_records": 442,
+  "real_records_flagged": 28,
+  "real_issue_counts": {
+    "fe_over_unity": 46,
+    "voltage_not_monotonic": 6,
+    "voltage_range": 5
+  },
+  "corpus": {
+    "documents": 150,
+    "by_layout": {
+      "table_en": 50,
+      "table_es": 50,
+      "instrument_export": 50
+    },
+    "injected_errors": {
+      "digit_swap": 12,
+      "missing_step": 3,
+      "id_typo": 7,
+      "decimal_shift": 6,
+      "composition_swap": 9,
+      "voltage_typo": 6,
+      "date_typo": 2
+    },
+    "documents_with_real_source_issues": 13
+  },
+  "rules_on_perfect_transcription": {
+    "injected_errors_caught_pct": 82.2,
+    "false_alarm_pct_on_clean_docs": 0.0
+  },
+  "extractors": {
+    "template": {
+      "record_exact_pct": 66.7,
+      "field_accuracy_pct": 95.65,
+      "record_exact_by_layout": {
+        "instrument_export": 0.0,
+        "table_en": 100.0,
+        "table_es": 100.0
+      },
+      "injected_errors_caught_pct": 88.9,
+      "injected_caught_by_kind": {
+        "composition_swap": 100.0,
+        "date_typo": 50.0,
+        "decimal_shift": 100.0,
+        "digit_swap": 100.0,
+        "id_typo": 100.0,
+        "missing_step": 100.0,
+        "voltage_typo": 33.3
+      },
+      "false_alarm_pct_on_clean_docs": 33.0,
+      "straight_through_pct": 46.7,
+      "wrong_records_accepted": 5,
+      "repair_turns": 0
+    }
+  }
+}
